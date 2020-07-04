@@ -1,0 +1,17 @@
+version: '2'
+services:
+  frontend:
+    build: ./frontend/simpleblog
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    container_name: blog-frontend
+    stdin_open: true
+
+  backend:
+    build: ./backend
+    ports:
+      - '3001:3001'
+    container_name: blog-backend
+    

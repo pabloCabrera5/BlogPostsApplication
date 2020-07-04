@@ -1,0 +1,14 @@
+
+.post {
+    border: 1px solid #ffffff;
+    margin: 10px auto;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 3px #ddd;
+}
+.post > a {
+    color: white;
+}
+.post:hover {
+    box-shadow: 3px 3px 3px 3px #ddd, -3px -3px 3px #ddd;
+    transform: scale(1.1);
+}
